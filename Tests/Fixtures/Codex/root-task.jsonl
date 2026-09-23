@@ -1,0 +1,10 @@
+{"type":"session_meta","timestamp":"2026-08-20T00:00:00Z","payload":{"id":"root-1","thread_source":"user","source":"vscode","cwd":"/tmp/project","cli_version":"test-version","timestamp":"2026-08-20T00:00:00Z"}}
+{"type":"event_msg","timestamp":"2026-08-20T00:00:01Z","payload":{"type":"user_message","message":"hello"}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:01Z","payload":{"type":"message","id":"u1","role":"user","content":[{"type":"input_text","text":"hello"}]}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:02Z","payload":{"type":"message","id":"d1","role":"developer","content":[{"type":"input_text","text":"hidden instruction"}]}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:03Z","payload":{"type":"reasoning","id":"r1","summary":[{"type":"summary_text","text":"hidden reasoning"}]}}
+{"type":"event_msg","timestamp":"2026-08-20T00:00:04Z","payload":{"type":"agent_message","message":"reply"}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:04Z","payload":{"type":"message","id":"a1","role":"assistant","content":[{"type":"output_text","text":"reply"}]}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:05Z","payload":{"type":"custom_tool_call","id":"t1","name":"tool","input":"secret tool input"}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:06Z","payload":{"type":"message","id":"u2","role":"user","content":[{"type":"input_text","text":"# Files mentioned by the user:\n- attachment.png\n\n## My request:\n真正请求"},{"type":"input_text","text":"<image name=[Image #1] path=\"/tmp/attachment.png\">"},{"type":"input_image","image_url":"data:image/png;base64,AAAA"},{"type":"input_text","text":"</image>"}]}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:07Z","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"legacy reply"}]}}

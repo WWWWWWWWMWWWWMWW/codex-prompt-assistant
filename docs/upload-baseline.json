@@ -2158,6 +2158,16 @@
       "path": "运行任务ID诊断.command",
       "sha256": "196bfff47cef138327f2707d9f4311bdb3b60a31df3ad6eabd353b2c98545942",
       "snapshotSHA256": "196bfff47cef138327f2707d9f4311bdb3b60a31df3ad6eabd353b2c98545942"
+    },
+    {
+      "path": "Tests/Fixtures/Codex/root-task.jsonl",
+      "sha256": "c7d2fd91153e6f1bdd7c599b065f41009e14834351c1a56d988b0dc92ff76327",
+      "snapshotSHA256": "c7d2fd91153e6f1bdd7c599b065f41009e14834351c1a56d988b0dc92ff76327"
+    },
+    {
+      "path": "Tests/Fixtures/Codex/subagent-task.jsonl",
+      "sha256": "df0d3189ab489676c47a00eff27bc958a34dadcfad0aebfacd4c8ea4cdbe0db1",
+      "snapshotSHA256": "df0d3189ab489676c47a00eff27bc958a34dadcfad0aebfacd4c8ea4cdbe0db1"
     }
   ],
   "documentationWhitespaceNormalized": [

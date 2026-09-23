@@ -1,0 +1,2 @@
+{"type":"session_meta","timestamp":"2026-08-20T00:00:00Z","payload":{"id":"subagent-1","thread_source":"subagent","source":"vscode","cwd":"/tmp/project","cli_version":"test-version","timestamp":"2026-08-20T00:00:00Z"}}
+{"type":"response_item","timestamp":"2026-08-20T00:00:01Z","payload":{"type":"message","id":"u-hidden","role":"user","content":[{"type":"input_text","text":"subagent task"}]}}
