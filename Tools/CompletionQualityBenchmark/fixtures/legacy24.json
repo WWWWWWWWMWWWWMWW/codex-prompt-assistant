@@ -1,0 +1,395 @@
+[
+  {
+    "id": "legacy-01",
+    "family_id": "legacy-01",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "核对字段映射时，保留原字段含义。对于来源缺失的条目，只需要",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-02",
+    "family_id": "legacy-02",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "比较两个版本时，先列明新增字段及其来源，再检查",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-03",
+    "family_id": "legacy-03",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "这份文档已经区分已确认结论与待确认项，请检查",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-04",
+    "family_id": "legacy-04",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "只修改界面样式，不调整接口参数，验收时应重点检查",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-05",
+    "family_id": "legacy-05",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "按列表核查：\n1. ",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-06",
+    "family_id": "legacy-06",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "先核对字段名称。\n\n再检查字段映射，发现缺失时",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-07",
+    "family_id": "legacy-07",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请按原样保留引用“待确认",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-08",
+    "family_id": "legacy-08",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请核对 https://example.test/path",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-09",
+    "family_id": "legacy-09",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请使用 {{field_",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-10",
+    "family_id": "legacy-10",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请核对以下片段：\n```python\nvalue = ",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-11",
+    "family_id": "legacy-11",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请比较字段名称，并列出不同项。",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-12",
+    "family_id": "legacy-12",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "已确认字段名称一致。",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-13",
+    "family_id": "legacy-13",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请核对来源。仍需检查",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-14",
+    "family_id": "legacy-14",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "需要分别记录问题描述与复现结果，再将它们",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-15",
+    "family_id": "legacy-15",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "输入为两份字段表，输出逐项差异。没有原始记录支持的内容",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-16",
+    "family_id": "legacy-16",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "Only compare the supplied records; when a field is missing, ",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-17",
+    "family_id": "legacy-17",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "继续处理，先核对它的",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready",
+      "truncated": false,
+      "messages": [
+        {
+          "role": "user",
+          "content": "本轮只检查字段映射表，不处理页面样式。"
+        },
+        {
+          "role": "assistant",
+          "content": "待核对的是映射表的字段来源。"
+        }
+      ]
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-18",
+    "family_id": "legacy-18",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "会议记录由项目经理归档，整改项已经确认，下一步只需核查",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-19",
+    "family_id": "legacy-19",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "核对字段映射，按以下结构列出需要检查的内容：\n1. 字段来源：确认",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-20",
+    "family_id": "legacy-20",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "不改变计算逻辑，仅优化报错文字，重点让",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-21",
+    "family_id": "legacy-21",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "整理这份会议纪要中的行动项，保留原文明确的负责人和期限，对未注明的部分",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-22",
+    "family_id": "legacy-22",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "比较这两段英文说明，保留原有语气，对无法确定的指代",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-23",
+    "family_id": "legacy-23",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "Compare the supplied drafts and cite the source passages for each difference. For any ambiguous reference, ",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  },
+  {
+    "id": "legacy-24",
+    "family_id": "legacy-24",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "根据已提供的排查记录整理结果，先说明已复现问题对应的操作与现象，再区分未复现条目和缺少证据的解释，最后将",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "expected": "unlabeled"
+  }
+]

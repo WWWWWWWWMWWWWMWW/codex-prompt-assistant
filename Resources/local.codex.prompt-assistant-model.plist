@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template only: generate with Tools/Release/model_agent.py before loading. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.codex.prompt-assistant-model</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>${CPA_USER_HOME}/Library/Application Support/CodexPromptAssistant/mlx-runtime/bin/mlx_lm.server</string>
+        <string>--model</string>
+        <string>mlx-community/Qwen3-4B-Instruct-2507-4bit</string>
+        <string>--host</string>
+        <string>127.0.0.1</string>
+        <string>--port</string>
+        <string>18921</string>
+        <string>--chat-template-args</string>
+        <string>{"enable_thinking":false}</string>
+        <string>--temp</string>
+        <string>0.3</string>
+        <string>--top-p</string>
+        <string>0.8</string>
+        <string>--top-k</string>
+        <string>20</string>
+        <string>--max-tokens</string>
+        <string>96</string>
+        <string>--prompt-cache-size</string>
+        <string>8</string>
+        <string>--log-level</string>
+        <string>WARNING</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HF_HOME</key>
+        <string>${CPA_USER_HOME}/Library/Application Support/CodexPromptAssistant/model-cache</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+    <key>StandardOutPath</key>
+    <string>${CPA_USER_HOME}/Library/Application Support/CodexPromptAssistant/local-model.log</string>
+    <key>StandardErrorPath</key>
+    <string>${CPA_USER_HOME}/Library/Application Support/CodexPromptAssistant/local-model.log</string>
+</dict>
+</plist>

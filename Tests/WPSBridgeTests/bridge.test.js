@@ -1,0 +1,23 @@
+const assert = require('node:assert/strict');
+const {cpaHandleRequest} = require('../../Integrations/WPS/main.js');
+let reads = 0;
+const range = {Start:0, End:5, get Text(){ reads++; return '测试正文\r'; }};
+const app = {ActiveDocument:{ReadOnly:false, ProtectionType:-1, FullName:'SyntheticDraft', Content:range},
+  Selection:{Type:1, Start:4, Range:{StoryType:1}}};
+const request = {id:'fixture', pid:123, createdAt:1000, phase:'metadata'};
+assert.equal(cpaHandleRequest(app, request, 1000).eligible, true);
+assert.equal(reads, 0, 'metadata must not read body text');
+assert.equal(cpaHandleRequest(app, {...request,createdAt:null},1000).eligible,false);
+assert.equal(cpaHandleRequest(app, {...request,createdAt:NaN},1000).eligible,false);
+assert.equal(cpaHandleRequest(app, {...request,phase:'body',documentId:'Other'},1000).eligible,false);
+assert.equal(reads, 0);
+assert.equal(cpaHandleRequest(app, {...request,phase:'body'},3000).eligible,false);
+assert.equal(reads, 0);
+const body = cpaHandleRequest(app,{...request,phase:'body',documentId:'SyntheticDraft'},1000);
+assert.equal(body.text,'测试正文'); assert.equal(body.cursor,4);
+app.Selection.Range.StoryType = 5;
+assert.equal(cpaHandleRequest(app,{...request,phase:'body'},1000).eligible,false);
+app.Selection.Range.StoryType = 1; app.ActiveDocument.ProtectionType = 2;
+assert.equal(cpaHandleRequest(app,{...request,phase:'body'},1000).eligible,false);
+assert.equal(reads,1,'non-body stories and protected documents must not read text');
+console.log('PASS: WPS bridge metadata/body separation, freshness, identity, protection and cursor mapping');

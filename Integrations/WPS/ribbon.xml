@@ -1,0 +1,5 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnAddinLoad">
+  <ribbon startFromScratch="false"><tabs><tab id="cpaWpsTab" label="提示助手">
+    <group id="cpaWpsStatus" label="本地正文适配"><button id="cpaWpsInfo" label="仅当前正文 · Tab 接受" enabled="false"/></group>
+  </tab></tabs></ribbon>
+</customUI>

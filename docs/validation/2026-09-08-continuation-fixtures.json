@@ -1,0 +1,985 @@
+{
+  "baselineCommit": "2d94b2d885641d5919ea1fa1fc64b99482996e5d",
+  "candidatePromptVersion": "2026-09-08.2",
+  "scope": "Synthetic fixtures only; one run per provider, not a semantic pass rate or latency SLA. IDs 19-24 are additional validation cases, not a blind evaluation.",
+  "contextFixtureForID17": [
+    {
+      "role": "user",
+      "content": "本轮只检查字段映射表，不处理页面样式。"
+    },
+    {
+      "role": "assistant",
+      "content": "待核对的是映射表的字段来源。"
+    }
+  ],
+  "runs": {
+    "baseline_local": [
+      {
+        "id": 1,
+        "input": "核对字段映射时，保留原字段含义。对于来源缺失的条目，只需要",
+        "suffix": "标注来源空缺并记录在案。",
+        "firstMs": 1640,
+        "totalMs": 1640,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 12
+      },
+      {
+        "id": 2,
+        "input": "比较两个版本时，先列明新增字段及其来源，再检查",
+        "suffix": "字段逻辑是否一致，确保无隐性依赖遗漏。",
+        "firstMs": 657,
+        "totalMs": 657,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 19
+      },
+      {
+        "id": 3,
+        "input": "这份文档已经区分已确认结论与待确认项，请检查",
+        "suffix": "待确认项是否涉及关键路径，确保后续推进不依赖未验证假设。",
+        "firstMs": 753,
+        "totalMs": 753,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 28
+      },
+      {
+        "id": 4,
+        "input": "只修改界面样式，不调整接口参数，验收时应重点检查",
+        "suffix": "样式一致性与核心功能联动是否正常。",
+        "firstMs": 588,
+        "totalMs": 588,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 17
+      },
+      {
+        "id": 5,
+        "input": "按列表核查：\n1. ",
+        "suffix": null,
+        "firstMs": 1341,
+        "totalMs": 1341,
+        "outcome": 0,
+        "phase": "no_suggestion",
+        "outputLength": 0
+      },
+      {
+        "id": 6,
+        "input": "先核对字段名称。\n\n再检查字段映射，发现缺失时",
+        "suffix": "需明确来源与对应关系。",
+        "firstMs": 539,
+        "totalMs": 539,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 11
+      },
+      {
+        "id": 7,
+        "input": "请按原样保留引用“待确认",
+        "suffix": "”相关内容，后续调整需基于明确反馈再行推进。",
+        "firstMs": 611,
+        "totalMs": 611,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 22
+      },
+      {
+        "id": 8,
+        "input": "请核对 https://example.test/path",
+        "suffix": "，确保链接指向的资源与当前需求一致。",
+        "firstMs": 582,
+        "totalMs": 582,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 18
+      },
+      {
+        "id": 9,
+        "input": "请使用 {{field_",
+        "suffix": "}} 进行参数绑定，确保字段名称与后端定义一致。",
+        "firstMs": 709,
+        "totalMs": 709,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 24
+      },
+      {
+        "id": 10,
+        "input": "请核对以下片段：\n```python\nvalue = ",
+        "suffix": null,
+        "firstMs": 241,
+        "totalMs": 241,
+        "outcome": 0,
+        "phase": "no_suggestion",
+        "outputLength": 0
+      },
+      {
+        "id": 11,
+        "input": "请比较字段名称，并列出不同项。",
+        "suffix": "确认差异是否影响数据映射，需进一步核实字段语义一致性。",
+        "firstMs": 696,
+        "totalMs": 696,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 27
+      },
+      {
+        "id": 12,
+        "input": "已确认字段名称一致。",
+        "suffix": "请后续按此标准进行版本比对与接口调用验证。",
+        "firstMs": 695,
+        "totalMs": 695,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 21
+      },
+      {
+        "id": 13,
+        "input": "请核对来源。仍需检查",
+        "suffix": "各环节数据一致性与接口调用记录。",
+        "firstMs": 524,
+        "totalMs": 524,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 16
+      },
+      {
+        "id": 14,
+        "input": "需要分别记录问题描述与复现结果，再将它们",
+        "suffix": "归入对应问题单并确保可追溯。",
+        "firstMs": 528,
+        "totalMs": 528,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 14
+      },
+      {
+        "id": 15,
+        "input": "输入为两份字段表，输出逐项差异。没有原始记录支持的内容",
+        "suffix": "，需确认字段来源是否一致。",
+        "firstMs": 550,
+        "totalMs": 550,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 13
+      },
+      {
+        "id": 16,
+        "input": "Only compare the supplied records; when a field is missing, ",
+        "suffix": "请确认该字段在双方数据中的预期存在性及缺失原因。",
+        "firstMs": 659,
+        "totalMs": 659,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 24
+      },
+      {
+        "id": 17,
+        "input": "继续处理，先核对它的",
+        "suffix": "字段来源与业务逻辑一致性。",
+        "firstMs": 872,
+        "totalMs": 872,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 13
+      },
+      {
+        "id": 18,
+        "input": "会议记录由项目经理归档，整改项已经确认，下一步只需核查",
+        "suffix": null,
+        "firstMs": 515,
+        "totalMs": 515,
+        "outcome": 0,
+        "phase": "no_suggestion_too_short",
+        "outputLength": 0
+      },
+      {
+        "id": 19,
+        "input": "核对字段映射，按以下结构列出需要检查的内容：\n1. 字段来源：确认",
+        "suffix": "数据表与接口中的字段定义是否一致，涉及的字段需逐项比对。",
+        "firstMs": 868,
+        "totalMs": 868,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 28
+      },
+      {
+        "id": 20,
+        "input": "不改变计算逻辑，仅优化报错文字，重点让",
+        "suffix": "用户能快速理解错误原因，并确保关键字段提示清晰可查。",
+        "firstMs": 669,
+        "totalMs": 669,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 26
+      },
+      {
+        "id": 21,
+        "input": "整理这份会议纪要中的行动项，保留原文明确的负责人和期限，对未注明的部分",
+        "suffix": "需补充责任人及完成节点。",
+        "firstMs": 522,
+        "totalMs": 522,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 12
+      },
+      {
+        "id": 22,
+        "input": "比较这两段英文说明，保留原有语气，对无法确定的指代",
+        "suffix": "需标注并说明上下文关联性。",
+        "firstMs": 579,
+        "totalMs": 579,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 13
+      },
+      {
+        "id": 23,
+        "input": "Compare the supplied drafts and cite the source passages for each difference. For any ambiguous reference, ",
+        "suffix": "请确认原始文本中对应段落的上下文是否明确，确保引用位置与原意一致。",
+        "firstMs": 947,
+        "totalMs": 947,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 33
+      },
+      {
+        "id": 24,
+        "input": "根据已提供的排查记录整理结果，先说明已复现问题对应的操作与现象，再区分未复现条目和缺少证据的解释，最后将",
+        "suffix": "涉及的关联项归类并明确待确认点。",
+        "firstMs": 745,
+        "totalMs": 745,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 16
+      }
+    ],
+    "baseline_remote": [
+      {
+        "id": 1,
+        "input": "核对字段映射时，保留原字段含义。对于来源缺失的条目，只需要",
+        "suffix": "标记为待确认，不要自行推断或补全默认值。",
+        "firstMs": 1996,
+        "totalMs": 1996,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 2,
+        "input": "比较两个版本时，先列明新增字段及其来源，再检查",
+        "suffix": "字段定义、类型和取值范围是否一致，并标注待确认项。",
+        "firstMs": 2585,
+        "totalMs": 2585,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 25
+      },
+      {
+        "id": 3,
+        "input": "这份文档已经区分已确认结论与待确认项，请检查",
+        "suffix": "其中待确认项是否均明确标注，并列出需补充验证的依据与来源。",
+        "firstMs": 1946,
+        "totalMs": 1946,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 29
+      },
+      {
+        "id": 4,
+        "input": "只修改界面样式，不调整接口参数，验收时应重点检查",
+        "suffix": "各接口请求参数、请求时机及返回数据处理是否保持不变。",
+        "firstMs": 2209,
+        "totalMs": 2209,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 26
+      },
+      {
+        "id": 5,
+        "input": "按列表核查：\n1. ",
+        "suffix": "逐项确认是否完整、准确，并标注待确认项。",
+        "firstMs": 1825,
+        "totalMs": 1825,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 6,
+        "input": "先核对字段名称。\n\n再检查字段映射，发现缺失时",
+        "suffix": "标记为待确认，不要自行补全或猜测。",
+        "firstMs": 1635,
+        "totalMs": 1635,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 17
+      },
+      {
+        "id": 7,
+        "input": "请按原样保留引用“待确认",
+        "suffix": "”并标注为待核实内容，不得补充或改写其含义。",
+        "firstMs": 2608,
+        "totalMs": 2608,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 22
+      },
+      {
+        "id": 8,
+        "input": "请核对 https://example.test/path",
+        "suffix": "中的内容，并标注需进一步确认的来源与字段",
+        "firstMs": 2562,
+        "totalMs": 2562,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 9,
+        "input": "请使用 {{field_",
+        "suffix": "name}} 作为输入字段，并仅输出处理后的结果。",
+        "firstMs": 3432,
+        "totalMs": 3432,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 25
+      },
+      {
+        "id": 10,
+        "input": "请核对以下片段：\n```python\nvalue = ",
+        "suffix": null,
+        "firstMs": 2381,
+        "totalMs": 2381,
+        "outcome": 0,
+        "phase": "no_suggestion",
+        "outputLength": 0
+      },
+      {
+        "id": 11,
+        "input": "请比较字段名称，并列出不同项。",
+        "suffix": "请忽略字段顺序和大小写差异，分别标明仅存在于各自列表中的字段。",
+        "firstMs": 2659,
+        "totalMs": 2659,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 31
+      },
+      {
+        "id": 12,
+        "input": "已确认字段名称一致。",
+        "suffix": null,
+        "firstMs": 5018,
+        "totalMs": 5018,
+        "outcome": 4,
+        "phase": "completion",
+        "outputLength": 0
+      },
+      {
+        "id": 13,
+        "input": "请核对来源。仍需检查",
+        "suffix": "数据口径、发布时间及引用内容是否一致，并标注待确认项",
+        "firstMs": 2312,
+        "totalMs": 2312,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 26
+      },
+      {
+        "id": 14,
+        "input": "需要分别记录问题描述与复现结果，再将它们",
+        "suffix": "与预期行为逐项对比，标注差异及待确认项。",
+        "firstMs": 1793,
+        "totalMs": 1793,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 15,
+        "input": "输入为两份字段表，输出逐项差异。没有原始记录支持的内容",
+        "suffix": "一律标注为待确认，不得推断或补充。",
+        "firstMs": 1779,
+        "totalMs": 1779,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 17
+      },
+      {
+        "id": 16,
+        "input": "Only compare the supplied records; when a field is missing, ",
+        "suffix": "flag it as unavailable rather than inferring a value.",
+        "firstMs": 1258,
+        "totalMs": 1258,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 53
+      },
+      {
+        "id": 17,
+        "input": "继续处理，先核对它的",
+        "suffix": "字段来源、映射关系及缺失项，仅检查映射表，不涉及页面样式。",
+        "firstMs": 2844,
+        "totalMs": 2844,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 29
+      },
+      {
+        "id": 18,
+        "input": "会议记录由项目经理归档，整改项已经确认，下一步只需核查",
+        "suffix": "各项整改的闭环证据是否齐全，未完成项注明待确认状态。",
+        "firstMs": 2151,
+        "totalMs": 2151,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 26
+      },
+      {
+        "id": 19,
+        "input": "核对字段映射，按以下结构列出需要检查的内容：\n1. 字段来源：确认",
+        "suffix": "各字段来自哪个系统、表或接口，是否存在重复定义。",
+        "firstMs": 1813,
+        "totalMs": 1813,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 24
+      },
+      {
+        "id": 20,
+        "input": "不改变计算逻辑，仅优化报错文字，重点让",
+        "suffix": "用户能明确知道输入字段和修正方式。",
+        "firstMs": 2122,
+        "totalMs": 2122,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 17
+      },
+      {
+        "id": 21,
+        "input": "整理这份会议纪要中的行动项，保留原文明确的负责人和期限，对未注明的部分",
+        "suffix": "标记为“待确认”，并按负责人归类输出。",
+        "firstMs": 1611,
+        "totalMs": 1611,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 19
+      },
+      {
+        "id": 22,
+        "input": "比较这两段英文说明，保留原有语气，对无法确定的指代",
+        "suffix": "进行标注，并逐句说明差异及其可能影响。",
+        "firstMs": 1728,
+        "totalMs": 1728,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 19
+      },
+      {
+        "id": 23,
+        "input": "Compare the supplied drafts and cite the source passages for each difference. For any ambiguous reference, ",
+        "suffix": "flag it for confirmation rather than inferring intent.",
+        "firstMs": 1838,
+        "totalMs": 1838,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 54
+      },
+      {
+        "id": 24,
+        "input": "根据已提供的排查记录整理结果，先说明已复现问题对应的操作与现象，再区分未复现条目和缺少证据的解释，最后将",
+        "suffix": "待确认项单列，并标注所需日志或截图依据。",
+        "firstMs": 1691,
+        "totalMs": 1691,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      }
+    ],
+    "candidate_local": [
+      {
+        "id": 1,
+        "input": "核对字段映射时，保留原字段含义。对于来源缺失的条目，只需要",
+        "suffix": "标注其缺失状态并注明需进一步追溯。",
+        "firstMs": 2389,
+        "totalMs": 2389,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 17
+      },
+      {
+        "id": 2,
+        "input": "比较两个版本时，先列明新增字段及其来源，再检查",
+        "suffix": "差异是否影响逻辑一致性。",
+        "firstMs": 904,
+        "totalMs": 904,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 12
+      },
+      {
+        "id": 3,
+        "input": "这份文档已经区分已确认结论与待确认项，请检查",
+        "suffix": "二者是否逻辑自洽，且待确认项是否均附有可追溯的证据链。",
+        "firstMs": 1305,
+        "totalMs": 1305,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 27
+      },
+      {
+        "id": 4,
+        "input": "只修改界面样式，不调整接口参数，验收时应重点检查",
+        "suffix": "页面元素是否完整、布局是否一致、颜色与字体是否符合设计规范。",
+        "firstMs": 1293,
+        "totalMs": 1293,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 30
+      },
+      {
+        "id": 5,
+        "input": "按列表核查：\n1. ",
+        "suffix": "证据完整性检查。",
+        "firstMs": 797,
+        "totalMs": 797,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 8
+      },
+      {
+        "id": 6,
+        "input": "先核对字段名称。\n\n再检查字段映射，发现缺失时",
+        "suffix": "标注为“未关联”，并暂停推导后续逻辑。",
+        "firstMs": 1081,
+        "totalMs": 1081,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 19
+      },
+      {
+        "id": 7,
+        "input": "请按原样保留引用“待确认",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 8,
+        "input": "请核对 https://example.test/path",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 9,
+        "input": "请使用 {{field_",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 10,
+        "input": "请核对以下片段：\n```python\nvalue = ",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 11,
+        "input": "请比较字段名称，并列出不同项。",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 12,
+        "input": "已确认字段名称一致。",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 13,
+        "input": "请核对来源。仍需检查",
+        "suffix": null,
+        "firstMs": 714,
+        "totalMs": 714,
+        "outcome": 0,
+        "phase": "no_suggestion_too_short",
+        "outputLength": 0
+      },
+      {
+        "id": 14,
+        "input": "需要分别记录问题描述与复现结果，再将它们",
+        "suffix": "归入对应问题单并标注优先级。",
+        "firstMs": 997,
+        "totalMs": 997,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 14
+      },
+      {
+        "id": 15,
+        "input": "输入为两份字段表，输出逐项差异。没有原始记录支持的内容",
+        "suffix": "不予推导，仅标注为“无依据”。",
+        "firstMs": 1044,
+        "totalMs": 1044,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 15
+      },
+      {
+        "id": 16,
+        "input": "Only compare the supplied records; when a field is missing, ",
+        "suffix": "treat it as absent in both records and do not infer or substitute values.",
+        "firstMs": 1117,
+        "totalMs": 1117,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 73
+      },
+      {
+        "id": 17,
+        "input": "继续处理，先核对它的",
+        "suffix": "字段来源。",
+        "firstMs": 961,
+        "totalMs": 961,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 5
+      },
+      {
+        "id": 18,
+        "input": "会议记录由项目经理归档，整改项已经确认，下一步只需核查",
+        "suffix": "相关责任人签字及闭环确认单。",
+        "firstMs": 952,
+        "totalMs": 952,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 14
+      },
+      {
+        "id": 19,
+        "input": "核对字段映射，按以下结构列出需要检查的内容：\n1. 字段来源：确认",
+        "suffix": null,
+        "firstMs": 806,
+        "totalMs": 806,
+        "outcome": 0,
+        "phase": "no_suggestion",
+        "outputLength": 0
+      },
+      {
+        "id": 20,
+        "input": "不改变计算逻辑，仅优化报错文字，重点让",
+        "suffix": "用户能快速识别问题本质，避免歧义表达。",
+        "firstMs": 1091,
+        "totalMs": 1091,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 19
+      },
+      {
+        "id": 21,
+        "input": "整理这份会议纪要中的行动项，保留原文明确的负责人和期限，对未注明的部分",
+        "suffix": "标注“负责人未明确”、“期限未明确”、“责任归属待确认”。",
+        "firstMs": 1281,
+        "totalMs": 1281,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 29
+      },
+      {
+        "id": 22,
+        "input": "比较这两段英文说明，保留原有语气，对无法确定的指代",
+        "suffix": "以原文形式呈现，不进行推测性替换或解释。",
+        "firstMs": 1079,
+        "totalMs": 1079,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 23,
+        "input": "Compare the supplied drafts and cite the source passages for each difference. For any ambiguous reference, ",
+        "suffix": "flag it as unresolved and retain the original phrasing without interpretation.",
+        "firstMs": 1088,
+        "totalMs": 1088,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 78
+      },
+      {
+        "id": 24,
+        "input": "根据已提供的排查记录整理结果，先说明已复现问题对应的操作与现象，再区分未复现条目和缺少证据的解释，最后将",
+        "suffix": "所有可验证的异常行为归类为待跟进事项，未明确关联的条目标注为信息缺失，不予推断。",
+        "firstMs": 1767,
+        "totalMs": 1767,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 40
+      }
+    ],
+    "candidate_remote": [
+      {
+        "id": 1,
+        "input": "核对字段映射时，保留原字段含义。对于来源缺失的条目，只需要",
+        "suffix": "注明来源缺失，不作推断。",
+        "firstMs": 1977,
+        "totalMs": 1977,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 12
+      },
+      {
+        "id": 2,
+        "input": "比较两个版本时，先列明新增字段及其来源，再检查",
+        "suffix": "原有字段是否发生变更。",
+        "firstMs": 2650,
+        "totalMs": 2650,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 11
+      },
+      {
+        "id": 3,
+        "input": "这份文档已经区分已确认结论与待确认项，请检查",
+        "suffix": "是否仍有将待确认项表述为既定事实的内容。",
+        "firstMs": 1654,
+        "totalMs": 1654,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 4,
+        "input": "只修改界面样式，不调整接口参数，验收时应重点检查",
+        "suffix": "界面展示与交互是否符合预期，且接口参数未发生变化。",
+        "firstMs": 1689,
+        "totalMs": 1689,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 25
+      },
+      {
+        "id": 5,
+        "input": "按列表核查：\n1. ",
+        "suffix": null,
+        "firstMs": 1902,
+        "totalMs": 1902,
+        "outcome": 0,
+        "phase": "no_suggestion",
+        "outputLength": 0
+      },
+      {
+        "id": 6,
+        "input": "先核对字段名称。\n\n再检查字段映射，发现缺失时",
+        "suffix": "标记缺失项。",
+        "firstMs": 2902,
+        "totalMs": 2902,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 6
+      },
+      {
+        "id": 7,
+        "input": "请按原样保留引用“待确认",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 8,
+        "input": "请核对 https://example.test/path",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 9,
+        "input": "请使用 {{field_",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 10,
+        "input": "请核对以下片段：\n```python\nvalue = ",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 11,
+        "input": "请比较字段名称，并列出不同项。",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 12,
+        "input": "已确认字段名称一致。",
+        "suffix": null,
+        "firstMs": 0,
+        "totalMs": 0,
+        "outcome": 0,
+        "phase": "no_suggestion_boundary",
+        "outputLength": 0
+      },
+      {
+        "id": 13,
+        "input": "请核对来源。仍需检查",
+        "suffix": null,
+        "firstMs": 1783,
+        "totalMs": 1783,
+        "outcome": 0,
+        "phase": "no_suggestion",
+        "outputLength": 0
+      },
+      {
+        "id": 14,
+        "input": "需要分别记录问题描述与复现结果，再将它们",
+        "suffix": "关联至对应的测试用例。",
+        "firstMs": 1947,
+        "totalMs": 1947,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 11
+      },
+      {
+        "id": 15,
+        "input": "输入为两份字段表，输出逐项差异。没有原始记录支持的内容",
+        "suffix": "不纳入差异判断。",
+        "firstMs": 1941,
+        "totalMs": 1941,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 8
+      },
+      {
+        "id": 16,
+        "input": "Only compare the supplied records; when a field is missing, ",
+        "suffix": "state that it is missing rather than infer it from other sources.",
+        "firstMs": 2143,
+        "totalMs": 2143,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 65
+      },
+      {
+        "id": 17,
+        "input": "继续处理，先核对它的",
+        "suffix": "字段来源。",
+        "firstMs": 2591,
+        "totalMs": 2591,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 5
+      },
+      {
+        "id": 18,
+        "input": "会议记录由项目经理归档，整改项已经确认，下一步只需核查",
+        "suffix": "整改项是否按确认内容落实",
+        "firstMs": 1745,
+        "totalMs": 1745,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 12
+      },
+      {
+        "id": 19,
+        "input": "核对字段映射，按以下结构列出需要检查的内容：\n1. 字段来源：确认",
+        "suffix": "各字段均有明确且一致的来源。",
+        "firstMs": 1990,
+        "totalMs": 1990,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 14
+      },
+      {
+        "id": 20,
+        "input": "不改变计算逻辑，仅优化报错文字，重点让",
+        "suffix": "用户能够快速理解问题原因并知道如何处理。",
+        "firstMs": 1567,
+        "totalMs": 1567,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 20
+      },
+      {
+        "id": 21,
+        "input": "整理这份会议纪要中的行动项，保留原文明确的负责人和期限，对未注明的部分",
+        "suffix": "标注为未注明。",
+        "firstMs": 2026,
+        "totalMs": 2026,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 7
+      },
+      {
+        "id": 22,
+        "input": "比较这两段英文说明，保留原有语气，对无法确定的指代",
+        "suffix": "不作主观推断，并标明可能存在的歧义",
+        "firstMs": 1856,
+        "totalMs": 1856,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 17
+      },
+      {
+        "id": 23,
+        "input": "Compare the supplied drafts and cite the source passages for each difference. For any ambiguous reference, ",
+        "suffix": "state that it cannot be resolved from the supplied drafts.",
+        "firstMs": 1844,
+        "totalMs": 1844,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 58
+      },
+      {
+        "id": 24,
+        "input": "根据已提供的排查记录整理结果，先说明已复现问题对应的操作与现象，再区分未复现条目和缺少证据的解释，最后将",
+        "suffix": "现有记录与结论对应列明，未确认部分明确标注为待补充。",
+        "firstMs": 3114,
+        "totalMs": 3114,
+        "outcome": 0,
+        "phase": "completion",
+        "outputLength": 26
+      }
+    ]
+  }
+}

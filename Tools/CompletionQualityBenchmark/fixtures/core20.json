@@ -1,0 +1,612 @@
+[
+  {
+    "id": "core-01",
+    "family_id": "F01",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请把正文翻译成英文，只输出",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "完成输出对象",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请把正文翻译成英文，只输出"
+      }
+    ],
+    "allowed": "译文",
+    "forbidden": "对照表、翻译解释",
+    "example": "译文。",
+    "rationale": "完成输出对象",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-02",
+    "family_id": "F01",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请把正文翻译成英文，只输出译文。",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "要求已完成",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请把正文翻译成英文，只输出译文。"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "术语表、复述不解释",
+    "example": "",
+    "rationale": "要求已完成",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-03",
+    "family_id": "F02",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "只检查飞书，不扩展到 WPS。",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "要求已完成",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "只检查飞书，不扩展到 WPS。"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "WPS、签字、优先级",
+    "example": "",
+    "rationale": "要求已完成",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-04",
+    "family_id": "F02",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "只改颜色，不动布局。请核对是否遵守上述限制，重点确认",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "明确要求核查限制",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "只改颜色，不动布局。请核对是否遵守上述限制，重点确认"
+      }
+    ],
+    "allowed": "核查布局不变",
+    "forbidden": "布局已不变的结论、性能检查",
+    "example": "布局是否保持原样。",
+    "rationale": "明确要求核查限制",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-05",
+    "family_id": "F02",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "只改颜色，不动布局，验收时检查",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "ambiguous",
+    "gap": "核查对象有歧义",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "只改颜色，不动布局，验收时检查"
+      }
+    ],
+    "allowed": "保守停笔或逐项裁决",
+    "forbidden": "无依据维度",
+    "example": "",
+    "rationale": "核查对象有歧义",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-06",
+    "family_id": "F03",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "继续支持吧，",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "无支持对象",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "继续支持吧，"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "默认待确认清单、客服承诺",
+    "example": "",
+    "rationale": "无支持对象",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-07",
+    "family_id": "F03",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请继续支持上述输入框，支持对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready",
+      "truncated": false,
+      "messages": [
+        {
+          "role": "user",
+          "content": "本轮支持对象只有飞书输入框。",
+          "source": "synthetic-user-1"
+        }
+      ]
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "历史指代",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请继续支持上述输入框，支持对象为"
+      },
+      {
+        "field": "context.messages[0].content",
+        "quote": "本轮支持对象只有飞书输入框。"
+      }
+    ],
+    "allowed": "飞书输入框",
+    "forbidden": "WPS、重复背景",
+    "example": "飞书输入框。",
+    "rationale": "历史指代",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-08",
+    "family_id": "F03",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请继续支持上述输入框，支持对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "missing",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "历史缺失",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请继续支持上述输入框，支持对象为"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "猜测支持对象",
+    "example": "",
+    "rationale": "历史缺失",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-09",
+    "family_id": "F04",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "负责人尚未确定。请把负责人一栏填写为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "已提出未知字段",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "负责人尚未确定。请把负责人一栏填写为"
+      }
+    ],
+    "allowed": "负责人待确认",
+    "forbidden": "人选、期限",
+    "example": "[负责人待确认]。",
+    "rationale": "已提出未知字段",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-10",
+    "family_id": "F04",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "负责人为张甲。请把负责人一栏填写为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "已提供字段",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "负责人为张甲。请把负责人一栏填写为"
+      }
+    ],
+    "allowed": "张甲",
+    "forbidden": "待确认、换人",
+    "example": "张甲。",
+    "rationale": "已提供字段",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-11",
+    "family_id": "F05",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "记录 A 已有状态字段，记录 B 的字段情况待核对。请核对记录 B 是否",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "对象属性已明确",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "记录 A 已有状态字段，记录 B 的字段情况待核对。请核对记录 B 是否"
+      }
+    ],
+    "allowed": "核查 B 状态字段",
+    "forbidden": "断言记录缺失",
+    "example": "包含状态字段。",
+    "rationale": "对象属性已明确",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-12",
+    "family_id": "F05",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "记录 A 与 B 的字段情况均未核对。",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "完整句",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "记录 A 与 B 的字段情况均未核对。"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "字段缺失结论、新步骤",
+    "example": "",
+    "rationale": "完整句",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-13",
+    "family_id": "F06",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "输出清单，未知项单列，不补充推测。",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "完整句",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "输出清单，未知项单列，不补充推测。"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "同义重复",
+    "example": "",
+    "rationale": "完整句",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-14",
+    "family_id": "F06",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "输出按“已确认”和“待确认”两栏整理，未知项归入",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "完成分类",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "输出按“已确认”和“待确认”两栏整理，未知项归入"
+      }
+    ],
+    "allowed": "待确认栏",
+    "forbidden": "新增栏目、复述整段",
+    "example": "“待确认”栏。",
+    "rationale": "完成分类",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-15",
+    "family_id": "F07",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "为什么出现重复？请先核对是否命中了",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "无具体核查对象",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "为什么出现重复？请先核对是否命中了"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "指定缓存、回答原因",
+    "example": "",
+    "rationale": "无具体核查对象",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-16",
+    "family_id": "F07",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "先比较输入原文和已接受后缀，检查新候选是否重复了",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "已给两个核查对象",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "先比较输入原文和已接受后缀，检查新候选是否重复了"
+      }
+    ],
+    "allowed": "保留两个对象",
+    "forbidden": "漏对象、客服回复、原因结论",
+    "example": "输入原文或已接受后缀中的内容。",
+    "rationale": "已给两个核查对象",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-17",
+    "family_id": "F08",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "unsupported",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "空输入",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": ""
+      }
+    ],
+    "allowed": "",
+    "forbidden": "默认模板",
+    "example": "",
+    "rationale": "空输入",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-18",
+    "family_id": "F08",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "- 输出：英文译文\n- 解释：",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "list",
+    "expected": "ambiguous",
+    "gap": "缺解释要求",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "- 输出：英文译文\n- 解释："
+      }
+    ],
+    "allowed": "保守停笔",
+    "forbidden": "自动填无、新增列表",
+    "example": "",
+    "rationale": "缺解释要求",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-19",
+    "family_id": "F09",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请核对 https://example.test/do",
+    "after_cursor": "cs",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "unsupported",
+    "language": "zh",
+    "structure": "link",
+    "expected": "stop",
+    "gap": "光标在链接内部",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请核对 https://example.test/do"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "任何插入",
+    "example": "",
+    "rationale": "光标在链接内部",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-20",
+    "family_id": "F09",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请输出",
+    "after_cursor": "，不要解释。",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "unsupported",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "当前不支持中部光标",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请输出"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "任何插入",
+    "example": "",
+    "rationale": "当前不支持中部光标",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  }
+]

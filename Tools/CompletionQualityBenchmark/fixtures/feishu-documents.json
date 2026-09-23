@@ -1,0 +1,134 @@
+[
+  {
+    "id": "doc-1-baseline",
+    "family_id": "document-prose",
+    "before_cursor": "活动目标：通过每日订单任务引导玩家持续参与，",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": false
+  },
+  {
+    "id": "doc-1-document",
+    "family_id": "document-prose",
+    "before_cursor": "活动目标：通过每日订单任务引导玩家持续参与，",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": true
+  },
+  {
+    "id": "doc-2-document",
+    "family_id": "document-prose",
+    "before_cursor": "活动积分仅通过完成订单获得，不计入其他活动。玩家完成订单后，",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": true
+  },
+  {
+    "id": "doc-2-baseline",
+    "family_id": "document-prose",
+    "before_cursor": "活动积分仅通过完成订单获得，不计入其他活动。玩家完成订单后，",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": false
+  },
+  {
+    "id": "doc-3-baseline",
+    "family_id": "document-prose",
+    "before_cursor": "未领取的阶段奖励将在活动结束后通过邮件补发，已经领取的奖励",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": false
+  },
+  {
+    "id": "doc-3-document",
+    "family_id": "document-prose",
+    "before_cursor": "未领取的阶段奖励将在活动结束后通过邮件补发，已经领取的奖励",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": true
+  },
+  {
+    "id": "doc-4-document",
+    "family_id": "document-prose",
+    "before_cursor": "活动入口在活动结束后关闭，玩家无法再",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": true
+  },
+  {
+    "id": "doc-4-baseline",
+    "family_id": "document-prose",
+    "before_cursor": "活动入口在活动结束后关闭，玩家无法再",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": false
+  },
+  {
+    "id": "doc-5-baseline",
+    "family_id": "document-prose",
+    "before_cursor": "策划案中的奖励数量尚未确定，相关数值",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": false
+  },
+  {
+    "id": "doc-5-document",
+    "family_id": "document-prose",
+    "before_cursor": "策划案中的奖励数量尚未确定，相关数值",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": true
+  },
+  {
+    "id": "doc-6-document",
+    "family_id": "document-prose",
+    "before_cursor": "本功能只调整活动入口的展示，不修改奖励和任务。展示范围为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": true
+  },
+  {
+    "id": "doc-6-baseline",
+    "family_id": "document-prose",
+    "before_cursor": "本功能只调整活动入口的展示，不修改奖励和任务。展示范围为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "messages": []
+    },
+    "document_continuation": false
+  }
+]

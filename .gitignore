@@ -1,0 +1,21 @@
+# Build outputs and local reports
+.build/
+build/
+outputs/
+*.dSYM/
+__pycache__/
+*.pyc
+.DS_Store
+docs/evaluation/results/
+*.log
+*.dmg
+*.tar.gz
+*.zip
+*.docx
+*.pptx
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

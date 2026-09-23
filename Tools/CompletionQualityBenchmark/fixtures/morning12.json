@@ -1,0 +1,365 @@
+[
+  {
+    "id": "context-01",
+    "family_id": "reference-input",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请继续支持上述输入框，支持对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "missing",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "当前草稿无对象，历史不可用",
+    "allowed": "",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请继续支持上述输入框，支持对象为"
+      }
+    ],
+    "rationale": "当前草稿无对象，历史不可用",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-08",
+    "family_id": "reference-input",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请继续支持上述输入框，支持对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready",
+      "truncated": true,
+      "messages": [
+        {
+          "role": "user",
+          "content": "本轮支持对象只有",
+          "source": "synthetic-0"
+        }
+      ]
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "对象被截断，不能补事实",
+    "allowed": "",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请继续支持上述输入框，支持对象为"
+      }
+    ],
+    "rationale": "对象被截断，不能补事实",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-10",
+    "family_id": "self-contained",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "本轮支持对象只有飞书输入框。请继续支持上述输入框，支持对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "missing",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "当前草稿已明确对象，不依赖历史",
+    "allowed": "飞书输入框。",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "本轮支持对象只有飞书输入框。请继续支持上述输入框，支持对象为"
+      }
+    ],
+    "rationale": "当前草稿已明确对象，不依赖历史",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-12",
+    "family_id": "self-contained",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "本轮支持对象只有飞书输入框。请继续支持上述输入框，支持对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "error",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "当前草稿已明确对象，不依赖历史",
+    "allowed": "飞书输入框。",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "本轮支持对象只有飞书输入框。请继续支持上述输入框，支持对象为"
+      }
+    ],
+    "rationale": "当前草稿已明确对象，不依赖历史",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-16",
+    "family_id": "conflicting-reference",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "分别检查飞书和 WPS 输入框。请继续检查它，检查对象为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "两个可能指代对象，不能自行选择",
+    "allowed": "",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "分别检查飞书和 WPS 输入框。请继续检查它，检查对象为"
+      }
+    ],
+    "rationale": "两个可能指代对象，不能自行选择",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-19",
+    "family_id": "english-reference",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "Continue supporting that input; the target is ",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready",
+      "truncated": false,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Only the Notes input is in scope.",
+          "source": "synthetic-0"
+        }
+      ]
+    },
+    "capability": "end_of_text",
+    "language": "en",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "可见用户材料明确 Notes input",
+    "allowed": "the Notes input.",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "Continue supporting that input; the target is "
+      }
+    ],
+    "rationale": "可见用户材料明确 Notes input",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-21",
+    "family_id": "unknown-field",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "支持对象尚未明确。请在支持对象字段填写",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "missing",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "已提出具体缺失字段可保留待确认，不猜名字",
+    "allowed": "[支持对象待确认]。",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "支持对象尚未明确。请在支持对象字段填写"
+      }
+    ],
+    "rationale": "已提出具体缺失字段可保留待确认，不猜名字",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-23",
+    "family_id": "no-reference",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请把正文翻译成英文，只输出",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "missing",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "原文自足且无历史依赖；短结尾拒绝必须保留为覆盖损失",
+    "allowed": "译文。",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请把正文翻译成英文，只输出"
+      }
+    ],
+    "rationale": "原文自足且无历史依赖；短结尾拒绝必须保留为覆盖损失",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "context-24",
+    "family_id": "quoted-reference",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请输出引号里的词语“上述对象”，输出内容为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "missing",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "词语是明确引用对象，不是未解析的指代",
+    "allowed": "“上述对象”。",
+    "forbidden": "猜测不可见对象、客服回应、新任务、默认字段清单",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请输出引号里的词语“上述对象”，输出内容为"
+      }
+    ],
+    "rationale": "词语是明确引用对象，不是未解析的指代",
+    "adjudication": "public development fixture frozen before generation; primary-agent authored, no blind review"
+  },
+  {
+    "id": "core-01",
+    "family_id": "F01",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "请把正文翻译成英文，只输出",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "完成输出对象",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "请把正文翻译成英文，只输出"
+      }
+    ],
+    "allowed": "译文",
+    "forbidden": "对照表、翻译解释",
+    "example": "译文。",
+    "rationale": "完成输出对象",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-06",
+    "family_id": "F03",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "继续支持吧，",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "stop",
+    "gap": "无支持对象",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "继续支持吧，"
+      }
+    ],
+    "allowed": "",
+    "forbidden": "默认待确认清单、客服承诺",
+    "example": "",
+    "rationale": "无支持对象",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  },
+  {
+    "id": "core-10",
+    "family_id": "F04",
+    "split": "development",
+    "revision": 1,
+    "before_cursor": "负责人为张甲。请把负责人一栏填写为",
+    "after_cursor": "",
+    "selection": 0,
+    "context": {
+      "availability": "ready_empty",
+      "truncated": false,
+      "messages": []
+    },
+    "capability": "end_of_text",
+    "language": "zh",
+    "structure": "plain",
+    "expected": "continue",
+    "gap": "已提供字段",
+    "evidence": [
+      {
+        "field": "before_cursor",
+        "quote": "负责人为张甲。请把负责人一栏填写为"
+      }
+    ],
+    "allowed": "张甲",
+    "forbidden": "待确认、换人",
+    "example": "张甲。",
+    "rationale": "已提供字段",
+    "adjudication": "public seed carried from roundtable; output review pending"
+  }
+]
